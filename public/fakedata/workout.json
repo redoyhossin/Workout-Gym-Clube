@@ -1,0 +1,66 @@
+[
+    {
+        "id": "65421jfcisgf784ynegfduYFIGBhiohsgvnhiFDYTDTfcvab98",
+        "name": "Push-up",
+        "age": "20-30",
+        "time":5,
+        "ratings":8,
+        "img": "https://cdn.mos.cms.futurecdn.net/KLZwUWe4JwyyXY7pV7CpaU-320-80.jpg"
+    },
+    {
+        "id": "65421jfcisgf784ynegfduYFIGBhiohsgvnhiFDYTDTf09",
+        "name": "plank",
+        "age": "19 - 35",
+        "time":3,
+        "ratings":5,
+        "img": "https://www.mensjournal.com/wp-content/uploads/mf/planks_for_abs_main_0.jpg?w=1200&h=630&crop=1&quality=86&strip=all"
+    },
+    {
+        "id": "65421jfcisgf784ynegfduYFIGBhiohsgvnhiFDYTDT9",
+        "name": "Side plank",
+        "age":" 21 - 31",
+        "time":5,
+        "ratings":4,
+        "img": "https://i.ytimg.com/vi/x4WhdDx2QSg/maxresdefault.jpg"
+    },
+    {
+        "id": "65421jfcisgf784ynegfduYFIGBhiohsgvnhiFDYTDT9ya10",
+        "name": "Squat",
+        "age": "18 - 30",
+        "time":4,
+        "ratings":6,
+        "img": "https://www.mensjournal.com/wp-content/uploads/2015/05/landminesquat.jpg?quality=82&strip=all"
+    },
+    {
+        "id": "65421jfcisgf784ynegfduYFIGBhiohsgvnhiFDYTDT9ya40",
+        "name": "Lunge",
+        "age": "17 - 36",
+        "time":2,
+        "ratings":5,
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lunge-man-1598357094.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*"
+    },
+    {
+        "id": "65421jfcisgf784ynegfduYFIGBhiohsgvnhiFDYTDT9ya70",
+        "name": "Wall sit",
+        "age":" 17 - 29",
+        "time":3,
+        "ratings":2,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDBjVBhOuO2LqFt1Mfbsm7UqPVkqfelsecsjCuvRil4mzYpZla2zaO4INv-56zJjwkLM&usqp=CAU"
+    },
+    {
+        "id": "65421jfcisgf784ynegfduYFIGBhiohsgvnhiFDYTDT9ya07",
+        "name": "Jumping jacks",
+        "age": "20- 40",
+        "time":5,
+        "ratings":4,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgbanFqAxR_lRIu-LhKGdXhWCrgoGJzsSEgA&usqp=CAU"
+    },
+    {
+        "id": "65421jfcisgf784ynegfduYFIGBhiohsgvnhiFDYTDT29",
+        "name": "Push up and relation",
+        "age": "20- 45",
+        "time":5,
+        "ratings":6,
+        "img": "https://cdn.fitimg.in/content_blog_inner_5F0F6C30.png"
+    }
+]
