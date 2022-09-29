@@ -41,7 +41,7 @@ const Mainsection = () => {
                             Products.map(product => <Product key={product.id} product={product} handleAddtolist={handleAddtolist} ></Product>)
                         }
                     </div>
-                    <div className='mt-20'>
+                    <div className='my-20'>
                         <Questionpart></Questionpart>
                     </div>
 
