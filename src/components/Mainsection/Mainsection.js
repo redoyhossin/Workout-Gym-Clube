@@ -28,7 +28,7 @@ const Mainsection = () => {
             <div className='main-container bg-white'>
                 <div className='mx-8 mt-6'>
                     <div className='my-10 ml-auto'>
-                    <div className='flex items-center justify-center text-2xl text-primary font-bolder'>
+                    <div className='flex items-center justify-center text-2xl text-slate-700 font-bolder'>
                         <FontAwesomeIcon icon={faDumbbell} />
                         <h1>Workout-Gym-Clube</h1>
                         </div>
