@@ -1,6 +1,11 @@
 import React from 'react';
-
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 const Carddetails = () => {
+    const handeltost = () => {
+        toast("Activity Completed", {
+        position:'top-center'
+    })};
     return (
         <div>
             <div>
@@ -27,12 +32,13 @@ const Carddetails = () => {
                     </div>
 
                     <div className='flex items-center bg-slate-300 py-3 rounded-xl px-4 mt-6'>
-                        <p className='text-xl font-semibold'>Exercise time</p>
+                        <p className='text-xl font-semibold'>Break time</p>
                         <p className='m-auto'>Mintues</p>
                     </div>
 
                     <div className='mt-12 text-center'>
-                        <button className='btn btn-primary px-12 '>Activity Completed</button>
+                        <button onClick={handeltost} className='btn btn-primary px-12 '>Activity Completed</button>
+                        <ToastContainer />
                     </div>
                 </div>
 
