@@ -1,22 +1,24 @@
 import React from 'react';
 import './Product.css'
 const Product = (props) => {
-    const { img, id, name, age, time, ratings } = props.product;
+    const{handleAddtolist,product}=props;
+    // console.log(props)
+    const { img, id, name, age, time, ratings } = product;
 // console.log(props.product)
 
 
     return (
         <div>
-            <div className=" product-style  bg-white h-full px-6 ">
-                <figure className="">
+            <div className=" main-card bg-slate-300 rounded-xl">
+                <div className="product-card">
                     <img src={img} alt="Shoes" className="" />
-                </figure>
-                <div className=" card-body items-center text-center">
-                    <h2 className="card-title">{name}</h2>
+                </div>
+                <div className=" ">
+                    <h2 className="">{name}</h2>
                     <p>For Age: {age}</p>
                     <p>Time required: {time}min</p>
-                    <div className="card-actions">
-                        <button onClick={()=>props.handleAddtolist(props.product)} className="btn btn-primary">Add to list</button>
+                    <div className="mt-1">
+                        <button onClick={()=>handleAddtolist(props.product) } className="btn btn-primary">Add to list</button>
                     </div>
                 </div>
             </div>

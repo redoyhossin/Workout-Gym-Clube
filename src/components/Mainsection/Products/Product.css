@@ -1,6 +1,17 @@
-.product-style img{
-     width:260px;
-     margin-top: 5px;
-     padding-top: 12px;
-     border-radius: 6px;
+.product-card img {
+     margin: auto;
+     width: 270px;
+     height: 150px;
+     border-radius: 6px 6px 0px 0px;
+}
+.product-card{
+     
+    /* padding-top:12px; */
+    /* border-radius: 4px; */
+}
+.main-card{
+     width:fit-content;
+     height:300px;
+     /* border: 7px solid yellow; */
+     text-align: center;
 }
