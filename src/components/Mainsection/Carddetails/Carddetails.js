@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
-const Carddetails = () => {
-    const handeltost = () => {
+const Carddetails = ({card}) => {
+    let totalmin = 0;
+    for (const product of card) {
+        totalmin = totalmin + product.time;        ;
+    }
+
+    const [mintues, setMinte] = useState()
+
+    const minheldler = (value) => {
+        setMinte(value);
+        
+    }
+    const handletost = () => {
         toast("Activity Completed", {
         position:'top-center'
-    })};
+        })
+    };
     return (
         <div>
             <div>
@@ -16,11 +28,11 @@ const Carddetails = () => {
             <div className='mt-2 pt-6 mx-2'>
                 <h1 className='text-2xl font-bold'>Add A Break</h1>
                 <div className='bg-slate-300 py-6 rounded-xl px-4 mt-2' >
-                    <button className='rounded-full bg-white p-2 mx-1'>10<span>s</span></button>
-                    <button className='rounded-full bg-white p-2 mx-1'>10<span>s</span></button>
-                    <button className='rounded-full bg-white p-2 mx-1'>10<span>s</span></button>
-                    <button className='rounded-full bg-white p-2 mx-1'>10<span>s</span></button>
-                    <button className='rounded-full bg-white p-2 mx-1'>10<span>s</span></button>
+                    <button onClick={()=>minheldler(5)} className='rounded-full bg-white p-2 mx-1'>5<span>s</span></button>
+                    <button onClick={()=>minheldler(10)} className='rounded-full bg-white p-2 mx-1'>10<span>s</span></button>
+                    <button onClick={()=>minheldler(20)} className='rounded-full bg-white p-2 mx-1'>20<span>s</span></button>
+                    <button onClick={()=>minheldler(40)} className='rounded-full bg-white p-2 mx-1'>40<span>s</span></button>
+                    <button onClick={()=>minheldler(50)} className='rounded-full bg-white p-2 mx-1'>50<span>s</span></button>
                 </div>
             </div>
             <div className='mt-12 mx-2'>
@@ -28,16 +40,16 @@ const Carddetails = () => {
                 <div>
                     <div className='flex items-center bg-slate-300 py-3 rounded-xl px-4 mt-5 '>
                         <p className='text-xl font-semibold'>Exercise time</p>
-                        <p className='m-auto'>Mintues</p>
+                        <p className='m-auto'>{totalmin} Mintues</p>
                     </div>
 
                     <div className='flex items-center bg-slate-300 py-3 rounded-xl px-4 mt-6'>
                         <p className='text-xl font-semibold'>Break time</p>
-                        <p className='m-auto'>Mintues</p>
+                        <p className='m-auto'>{mintues} Mintues</p>
                     </div>
 
                     <div className='mt-12 text-center'>
-                        <button onClick={handeltost} className='btn btn-primary px-12 '>Activity Completed</button>
+                        <button onClick={handletost} className='btn btn-primary px-12 '>Activity Completed</button>
                         <ToastContainer />
                     </div>
                 </div>

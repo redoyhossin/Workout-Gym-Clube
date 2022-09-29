@@ -16,10 +16,10 @@ const Mainsection = () => {
             .then(res => res.json())
             .then(data => setProducts(data))
 
-    }, [])
+    }, []);
 
-    const handleAddtolist = (Product) => {
-        const newCard = [...card, Product];
+    const handleAddtolist = (product) => {
+        const newCard = [...card, product];
         setCard(newCard)
     }
 
@@ -43,8 +43,8 @@ const Mainsection = () => {
                 </div>
 
                 <div className='card-details  bg-base-100'>
-                    <Carddetails></Carddetails>
-                    <h1>hello:{card.length}</h1>
+                    <Carddetails key={card.id} card={card}></Carddetails>
+                  
 
                 </div>
             </div>

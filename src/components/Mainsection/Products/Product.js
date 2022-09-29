@@ -16,7 +16,7 @@ const Product = (props) => {
                     <p>For Age: {age}</p>
                     <p>Time required: {time}min</p>
                     <div className="card-actions">
-                        <button onClick={()=>props.handleAddtolist()} className="btn btn-primary">Add to list</button>
+                        <button onClick={()=>props.handleAddtolist(props.product)} className="btn btn-primary">Add to list</button>
                     </div>
                 </div>
             </div>
