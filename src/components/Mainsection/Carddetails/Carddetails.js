@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+// import { storegedata } from '../../utilitis/Storege';
 const Carddetails = ({card}) => {
     let totalmin = 0;
     for (const product of card) {
@@ -11,8 +12,14 @@ const Carddetails = ({card}) => {
 
     const minheldler = (value) => {
         setMinte(value);
+        // localStorage.setItem("brake",value);
+    //    storegedata(value)
         
     }
+    // useEffect(() => {
+    //     localStorage.getItem"(brake")
+    //     localStorage.setItem("break",)
+    // },[])
     const handletost = () => {
         toast("Activity Completed", {
         position:'top-center'
